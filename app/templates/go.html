@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disaster Response Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <h1>Disaster Response Classifier</h1>
+    <form id="message-form">
+      <label for="message-input">Enter a message to classify:</label>
+      <input type="text" id="message-input" name="message-input" />
+      <button type="submit">Classify</button>
+    </form>
+    <div id="result-container" style="display: none;">
+      <h2>Classification Results:</h2>
+      <ul id="classification-results"></ul>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

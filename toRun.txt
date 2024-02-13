@@ -1,0 +1,3 @@
+python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+
+C:\Python311\python.exe models\train_classifier.py data\DisasterResponse.db models\classifier.pkl
