@@ -24,3 +24,22 @@ The web app allows emergency workers to input new messages and see the categorie
 
 Acknowledgements
 This project was created as part of the Udacity Data Science Nanodegree program. The disaster response data was provided by Figure Eight.
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Classified Categories</title>
+  </head>
+  <body>
+    <h1>Classified Categories</h1>
+    <ul>
+      {% for category in categories %}
+        <li>{{ category[0] }} ({{ category[1]*100|round(1) }}%)</li>
+      {% endfor %}
+    </ul>
+    <a href="/">Classify another message</a>
+  </body>
+</html>
